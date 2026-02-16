@@ -1,0 +1,9 @@
+[build]
+  base = "frontend"
+  publish = "."   # frontend folder ke andar hi sab files hain
+  command = ""    # static site hai, koi build command nahi
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
