@@ -4,11 +4,11 @@
  */
 
 const AdminPortal = {
-  API_URL: 'http://localhost:3000/api/admissions',
-  NEWS_API_URL: 'http://localhost:3000/api/news',
-  STUDENT_API_URL: 'http://localhost:3000/api/student',
-  TEACHERS_API_URL: 'http://localhost:3000/api/teachers',
-  CLASS_TEACHERS_API_URL: 'http://localhost:3000/api/class-teachers',
+  API_URL: 'http://https://jrc-school-pro.onrender.com/api/admissions',
+  NEWS_API_URL: 'http://https://jrc-school-pro.onrender.com/api/news',
+  STUDENT_API_URL: 'http://https://jrc-school-pro.onrender.com/api/student',
+  TEACHERS_API_URL: 'http://https://jrc-school-pro.onrender.com/api/teachers',
+  CLASS_TEACHERS_API_URL: 'http://https://jrc-school-pro.onrender.com/api/class-teachers',
   currentPage: 1,
   currentLimit: 20,
   currentStatus: '',
@@ -153,7 +153,7 @@ const AdminPortal = {
                 imgUrl = originalImage;
               } else {
                 const cleanPath = originalImage.startsWith('/') ? originalImage.substring(1) : originalImage;
-                imgUrl = `http://localhost:3000/${cleanPath}`;
+                imgUrl = `http://https://jrc-school-pro.onrender.com/${cleanPath}`;
               }
               if (previewImg) {
                 previewImg.src = imgUrl;
@@ -734,7 +734,7 @@ ${admission.notes ? `Notes: ${admission.notes}` : ''}
             <div class="flex items-center gap-2 mb-1">
               ${t.image && t.image.trim() ? (() => {
                 const cleanPath = t.image.startsWith('/') ? t.image.substring(1) : t.image;
-                const imgUrl = t.image.startsWith('http') ? t.image : `http://localhost:3000/${cleanPath}`;
+                const imgUrl = t.image.startsWith('http') ? t.image : `http://https://jrc-school-pro.onrender.com/${cleanPath}`;
                 return `<img src="${this.escapeHtml(imgUrl)}" alt="${this.escapeHtml(t.name)}" class="w-12 h-12 rounded-full object-cover border-2 border-blue-200" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><div style="display:none; width:48px; height:48px; background:#d1d5db; border-radius:9999px; border:2px solid #93c5fd;"></div>`;
               })() : '<div class="w-12 h-12 rounded-full bg-gray-300 border-2 border-blue-200"></div>'}
               <div>
@@ -810,7 +810,7 @@ ${admission.notes ? `Notes: ${admission.notes}` : ''}
                 } else {
                   // Remove leading slash if present, then add base URL
                   const cleanPath = t.image.startsWith('/') ? t.image.substring(1) : t.image;
-                  imgUrl = `http://localhost:3000/${cleanPath}`;
+                  imgUrl = `http://https://jrc-school-pro.onrender.com/${cleanPath}`;
                 }
                 previewImg.src = imgUrl;
                 previewImg.onerror = function() {
@@ -921,7 +921,7 @@ ${admission.notes ? `Notes: ${admission.notes}` : ''}
       console.log('✅ Teacher saved successfully:', result.data);
       if (result.data && result.data.image) {
         console.log('✅ Image path saved:', result.data.image);
-        console.log('✅ Full image URL:', `http://localhost:3000/${result.data.image}`);
+        console.log('✅ Full image URL:', `http://https://jrc-school-pro.onrender.com/${result.data.image}`);
       }
       this.closeTeacherModal();
       this.loadTeachers();
