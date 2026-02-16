@@ -1,7 +1,7 @@
 [build]
-  base = "jrcschool"
-  publish = "jrcschool"
-  command = ""
+  base = "jrcschool"          # ✅ relative path to your frontend folder
+  publish = "jrcschool"       # ✅ folder containing index.html
+  command = ""                # ✅ plain HTML, no build needed
 
 [[redirects]]
   from = "/*"
