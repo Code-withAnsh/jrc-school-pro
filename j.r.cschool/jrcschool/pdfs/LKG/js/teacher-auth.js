@@ -5,7 +5,7 @@
  */
 
 const TeacherAuth = {
-  API_BASE: 'http://https://jrc-school-pro.onrender.com/api',
+  API_BASE: 'https://jrc-school-pro.onrender.com/api',
   SESSION_KEY: 'jrc_teacher_session',
 
   init() {

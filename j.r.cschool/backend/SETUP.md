@@ -50,7 +50,7 @@ PORT=3000
 NODE_ENV=development
 
 # Frontend URL
-FRONTEND_URL=http://localhost:5500
+FRONTEND_URL=localhost:5500
 ```
 
 ### 5. Backend Server Start करें
@@ -63,13 +63,13 @@ npm run dev
 npm start
 ```
 
-Server `http://https://jrc-school-pro.onrender.com` पर चलेगा।
+Server `https://jrc-school-pro.onrender.com` पर चलेगा।
 
 ## 📝 Testing
 
 ### 1. Health Check:
 ```bash
-curl http://https://jrc-school-pro.onrender.com/api/health
+curl https://jrc-school-pro.onrender.com/api/health
 ```
 
 ### 2. Admission Form Submit करें:

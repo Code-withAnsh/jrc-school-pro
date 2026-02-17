@@ -61,7 +61,7 @@ Server successfully start होने पर आपको यह दिखन�
 ```
 ✅ Connected to MongoDB
 🚀 Server running on port 3000
-📡 API available at http://https://jrc-school-pro.onrender.com/api
+📡 API available at https://jrc-school-pro.onrender.com/api
 ```
 
 ## 🧪 Test
@@ -70,10 +70,10 @@ Server start होने के बाद test करें:
 
 ```bash
 # Health check
-curl http://https://jrc-school-pro.onrender.com/api/health
+curl https://jrc-school-pro.onrender.com/api/health
 
 # या browser में खोलें
-open http://https://jrc-school-pro.onrender.com/api/health
+open https://jrc-school-pro.onrender.com/api/health
 ```
 
 ## 💡 Prevention

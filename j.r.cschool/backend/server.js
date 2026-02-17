@@ -44,10 +44,10 @@ app.use(cors({
     // In production, check against allowed origins
     const allowedOrigins = [
       process.env.FRONTEND_URL,
-      'http://localhost:5500',
-      'http://https://jrc-school-pro.onrender.com',
-      'http://127.0.0.1:5500',
-      'http://127.0.0.1:3000'
+      'localhost:5500',
+      'https://jrc-school-pro.onrender.com',
+      '127.0.0.1:5500',
+      '127.0.0.1:3000'
     ].filter(Boolean);
     
     if (allowedOrigins.indexOf(origin) !== -1) {
@@ -116,11 +116,17 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/jrc-schoo
   console.log('✅ Connected to MongoDB');
   
   // Start server
-  app.listen(PORT, () => {
-    console.log(`🚀 Server running on port ${PORT}`);
-    console.log(`📡 API available at http://localhost:${PORT}/api`);
-    console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
-  });
+ app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
+
+  const BASE_URL =
+    process.env.NODE_ENV === "production"
+      ? "https://jrc-school-pro.onrender.com"
+      : `localhost:${PORT}`;
+
+  console.log(`📡 API available at ${BASE_URL}/api`);
+  console.log(`🌍 Environment: ${process.env.NODE_ENV || "development"}`);
+});
 })
 .catch((error) => {
   console.error('❌ MongoDB connection error:', error);

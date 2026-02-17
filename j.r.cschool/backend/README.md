@@ -47,7 +47,7 @@ Backend server for JRC School website built with Node.js and Express.
    EMAIL_PASS=your-app-password
    SCHOOL_PHONE=+918874543973
    SCHOOL_EMAIL=info@jrcschool.com
-   FRONTEND_URL=http://localhost:5500
+   FRONTEND_URL=localhost:5500
    ```
 
 4. **Start MongoDB:**
@@ -168,7 +168,7 @@ Update frontend JavaScript files to call these APIs:
 
 ```javascript
 // Example: Submit admission form
-fetch('http://https://jrc-school-pro.onrender.com/api/admissions/submit', {
+fetch('https://jrc-school-pro.onrender.com/api/admissions/submit', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(formData)
@@ -184,7 +184,7 @@ fetch('http://https://jrc-school-pro.onrender.com/api/admissions/submit', {
 ## Development
 
 - Use `npm run dev` for development (auto-reload with nodemon)
-- API runs on `http://https://jrc-school-pro.onrender.com`
+- API runs on `https://jrc-school-pro.onrender.com`
 - Check console for connection status
 
 ## Production Deployment

@@ -1,19 +1,19 @@
 /*
  * The Typekit service used to deliver this font or fonts for use on websites
  * is provided by Adobe and is subject to these Terms of Use
- * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * www.adobe.com/products/eulas/tou_typekit. For font license
  * information, see the list below.
  *
  * adobe-clean:
- *   - http://typekit.com/eulas/00000000000000007735dac8
- *   - http://typekit.com/eulas/00000000000000007735dacd
- *   - http://typekit.com/eulas/00000000000000007735dad8
- *   - http://typekit.com/eulas/00000000000000007735dadb
- *   - http://typekit.com/eulas/00000000000000007735dad4
- *   - http://typekit.com/eulas/00000000000000007735dad9
+ *   - typekit.com/eulas/00000000000000007735dac8
+ *   - typekit.com/eulas/00000000000000007735dacd
+ *   - typekit.com/eulas/00000000000000007735dad8
+ *   - typekit.com/eulas/00000000000000007735dadb
+ *   - typekit.com/eulas/00000000000000007735dad4
+ *   - typekit.com/eulas/00000000000000007735dad9
  * adobe-clean-display:
- *   - http://typekit.com/eulas/00000000000000007759e4cf
- *   - http://typekit.com/eulas/00000000000000007759e4d5
+ *   - typekit.com/eulas/00000000000000007759e4cf
+ *   - typekit.com/eulas/00000000000000007759e4d5
  *
  * © 2009-2026 Adobe Systems Incorporated. All Rights Reserved.
  */
