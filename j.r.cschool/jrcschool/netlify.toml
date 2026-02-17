@@ -1,7 +1,7 @@
 [build]
-  base = "."        # repo root ka relative path
-  publish = "."     # repo root me index.html hai
-  command = ""      # plain HTML site, koi build command nahi
+  base = "frontend"
+  publish = "."   # frontend folder ke andar hi sab files hain
+  command = ""    # static site hai, koi build command nahi
 
 [[redirects]]
   from = "/*"

@@ -13,15 +13,15 @@ if ! pgrep -x "mongod" > /dev/null; then
 fi
 
 # Check if backend server is already running
-if curl -s http://localhost:3000/api/health > /dev/null 2>&1; then
-    echo "✅ Backend server is already running on http://localhost:3000"
+if curl -s http://https://jrc-school-pro.onrender.com/api/health > /dev/null 2>&1; then
+    echo "✅ Backend server is already running on http://https://jrc-school-pro.onrender.com"
     exit 0
 fi
 
 # Start backend server
 echo "🌐 Starting backend server..."
 echo ""
-echo "Server will start on http://localhost:3000"
+echo "Server will start on http://https://jrc-school-pro.onrender.com"
 echo "Press Ctrl+C to stop the server"
 echo ""
 

@@ -19,7 +19,7 @@ cd backend
 npm run dev
 ```
 
-Server `http://localhost:3000` पर चलेगा।
+Server `http://https://jrc-school-pro.onrender.com` पर चलेगा।
 
 ## Step 3: Frontend खोलें
 

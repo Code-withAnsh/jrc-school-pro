@@ -63,13 +63,13 @@ npm run dev
 npm start
 ```
 
-Server `http://localhost:3000` पर चलेगा।
+Server `http://https://jrc-school-pro.onrender.com` पर चलेगा।
 
 ## 📝 Testing
 
 ### 1. Health Check:
 ```bash
-curl http://localhost:3000/api/health
+curl http://https://jrc-school-pro.onrender.com/api/health
 ```
 
 ### 2. Admission Form Submit करें:

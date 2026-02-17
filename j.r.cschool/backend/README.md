@@ -168,7 +168,7 @@ Update frontend JavaScript files to call these APIs:
 
 ```javascript
 // Example: Submit admission form
-fetch('http://localhost:3000/api/admissions/submit', {
+fetch('http://https://jrc-school-pro.onrender.com/api/admissions/submit', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(formData)
@@ -184,7 +184,7 @@ fetch('http://localhost:3000/api/admissions/submit', {
 ## Development
 
 - Use `npm run dev` for development (auto-reload with nodemon)
-- API runs on `http://localhost:3000`
+- API runs on `http://https://jrc-school-pro.onrender.com`
 - Check console for connection status
 
 ## Production Deployment
