@@ -106,7 +106,7 @@ JRCAssistant.addMessage('Hello!', 'user');
 
 ### HTML Pages Include:
 
-**Home Page (`school.html`):**
+**Home Page (`/j.r.cschool/index.html`):**
 ```html
 <script src="js/main.js"></script>
 ```
