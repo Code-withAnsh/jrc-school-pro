@@ -62,11 +62,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve static files - images and uploads
-const staticPath = path.join(__dirname, '../jrcschool/pdfs/LKG');
+const staticPath = path.join(__dirname, '../jrcschool/j.r.cschool/jrcschool/pdfs//LKG');
 app.use(express.static(staticPath));
 console.log('📁 Serving static files from:', staticPath);
 
-const teacherUploadsPath = path.join(__dirname, '../jrcschool/pdfs/LKG/uploads/teachers');
+const teacherUploadsPath = path.join(__dirname, '../jrcschool/j.r.cschool/jrcschool/pdfs//LKG/uploads/teachers');
 app.use('/uploads/teachers', express.static(teacherUploadsPath));
 console.log('📁 Teacher images from:', teacherUploadsPath);
 // Health check endpoint
